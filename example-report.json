@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "input": {
+    "bytes": 94,
+    "sha256": "4088a22ad4bdf8fe11941daa9361bc9da83cc997b6e2c92dcf6840d71a122ef8"
+  },
+  "scope": "Raw MIDI note-number coverage for an explicitly chosen chromatic keyboard range, not sounding pitch or playability.",
+  "note_label_convention": "MIDI60=C4; international sharp names; B means German H. MIDI numbers are authoritative.",
+  "smf_type": 1,
+  "ticks_per_quarter_note": 480,
+  "keyboard": {
+    "lowest": {
+      "midi_note": 36,
+      "label": "C2"
+    },
+    "highest": {
+      "midi_note": 72,
+      "label": "C5"
+    },
+    "keys_inclusive": 37
+  },
+  "selection": {
+    "tracks_zero_based": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "channels_one_based": [
+      1
+    ],
+    "positive_note_on_count_in_file": 6,
+    "selected_note_on_count": 3,
+    "excluded_positive_note_on_count": 3
+  },
+  "observed": {
+    "note_on_count": 3,
+    "distinct_note_count": 3,
+    "lowest": {
+      "midi_note": 48,
+      "label": "C3"
+    },
+    "highest": {
+      "midi_note": 84,
+      "label": "C6"
+    },
+    "span_keys": 37
+  },
+  "tracks": [
+    {
+      "track_index": 0,
+      "message_count": 1,
+      "positive_note_on_count": 0,
+      "end_tick": 0,
+      "selected": {
+        "note_on_count": 0,
+        "distinct_note_count": 0,
+        "lowest": null,
+        "highest": null,
+        "span_keys": 0
+      }
+    },
+    {
+      "track_index": 1,
+      "message_count": 5,
+      "positive_note_on_count": 3,
+      "end_tick": 720,
+      "selected": {
+        "note_on_count": 3,
+        "distinct_note_count": 3,
+        "lowest": {
+          "midi_note": 48,
+          "label": "C3"
+        },
+        "highest": {
+          "midi_note": 84,
+          "label": "C6"
+        },
+        "span_keys": 37
+      }
+    },
+    {
+      "track_index": 2,
+      "message_count": 3,
+      "positive_note_on_count": 2,
+      "end_tick": 480,
+      "selected": {
+        "note_on_count": 0,
+        "distinct_note_count": 0,
+        "lowest": null,
+        "highest": null,
+        "span_keys": 0
+      }
+    },
+    {
+      "track_index": 3,
+      "message_count": 2,
+      "positive_note_on_count": 1,
+      "end_tick": 0,
+      "selected": {
+        "note_on_count": 0,
+        "distinct_note_count": 0,
+        "lowest": null,
+        "highest": null,
+        "span_keys": 0
+      }
+    }
+  ],
+  "channels": [
+    {
+      "channel": 1,
+      "note_on_count": 3,
+      "distinct_note_count": 3,
+      "lowest": {
+        "midi_note": 48,
+        "label": "C3"
+      },
+      "highest": {
+        "midi_note": 84,
+        "label": "C6"
+      },
+      "span_keys": 37
+    }
+  ],
+  "note_histogram": [
+    {
+      "midi_note": 48,
+      "label": "C3",
+      "note_on_count": 1
+    },
+    {
+      "midi_note": 72,
+      "label": "C5",
+      "note_on_count": 1
+    },
+    {
+      "midi_note": 84,
+      "label": "C6",
+      "note_on_count": 1
+    }
+  ],
+  "outside_original_keyboard": {
+    "note_on_count": 1,
+    "notes": [
+      {
+        "midi_note": 84,
+        "label": "C6",
+        "note_on_count": 1
+      }
+    ],
+    "first_examples": [
+      {
+        "midi_note": 84,
+        "channel": 1,
+        "track_index": 1,
+        "message_index": 2,
+        "absolute_tick": 480
+      }
+    ],
+    "example_limit": 8,
+    "example_order": "absolute_tick, track_index, message_index for lookup only; no cross-track performance-order claim"
+  },
+  "uniform_shift_plan": {
+    "status": "uniform_fit_found",
+    "search_min_semitones": -24,
+    "search_max_semitones": 24,
+    "theoretical_min_semitones": -12,
+    "theoretical_max_semitones": -12,
+    "all_fitting_semitones_in_search": [
+      -12
+    ],
+    "octave_preserving_fitting_semitones": [
+      -12
+    ],
+    "smallest_absolute_fit_semitones": -12,
+    "tie_break": "negative before positive; mathematical convention, not a musical recommendation",
+    "mapping_for_smallest_fit": [
+      {
+        "original": {
+          "midi_note": 48,
+          "label": "C3"
+        },
+        "mapped": {
+          "midi_note": 36,
+          "label": "C2"
+        },
+        "note_on_count": 1
+      },
+      {
+        "original": {
+          "midi_note": 72,
+          "label": "C5"
+        },
+        "mapped": {
+          "midi_note": 60,
+          "label": "C4"
+        },
+        "note_on_count": 1
+      },
+      {
+        "original": {
+          "midi_note": 84,
+          "label": "C6"
+        },
+        "mapped": {
+          "midi_note": 72,
+          "label": "C5"
+        },
+        "note_on_count": 1
+      }
+    ]
+  },
+  "message_counts": {
+    "messages": 11,
+    "zero_velocity_note_on": 1,
+    "note_off": 0,
+    "pitchwheel": 0,
+    "sysex": 0
+  },
+  "warnings": [
+    "Nur Note On mit Velocity größer null zählt als Anschlag; Velocity0 und Note Off erweitern den Tonumfang nicht.",
+    "Pitch Bend, Stimmung, SysEx, Klangprogramme, Tastaturzonen und geräteeigene Transposition werden nicht interpretiert.",
+    "Ein passender Notennummernbereich beweist weder bequeme Handlage, Fingersatz, erreichbare Akkorde noch musikalisch passende Tonart.",
+    "Keine Noten werden gelöscht, oktaviert, gespeichert, abgespielt oder an ein Gerät gesendet. Ticks sind Suchpositionen, keine Takt- oder Sekundenangaben."
+  ]
+}
